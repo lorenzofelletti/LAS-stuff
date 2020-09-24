@@ -14,7 +14,7 @@ iptables -P OUTPUT DROP
 iptables -P FORWARD DROP
 ```
 
-# Optional Parameters
+## Optional Parameters
 | short option 	| long option  	| long option alternative 	| required parameters      	| description                            	|
 |--------------	|--------------	|-------------------------	|--------------------------	|----------------------------------------	|
 | -c           	| --client     	| client                  	| an ip address            	| client                                 	|
@@ -28,7 +28,7 @@ iptables -P FORWARD DROP
 | -v           	| --vpn        	| vpn                     	|                          	| allow vpn                              	|
 | -f           	|              	|                         	| filename                 	| set output file                        	|
 
-# Usage examples
+## Usage examples
 Note: The order in which you list the argument isn't important
 ```bash
 # enable ldap, snmp, incoming syslog with default servers (10.9.9.1/24)
