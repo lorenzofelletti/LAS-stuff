@@ -96,9 +96,9 @@ fi
 
 # syslog (out)
 if [[ ! -z "$syslogout" ]]; then
-#  echo '# regole syslog uscente' >> "$FILE"
-#  echo "iptables -I OUTPUT -p udp -d ${SERVER} --dport 514 -j ACCEPT" >> "$FILE"
-#  printf "\n" >> "$FILE"
+  echo '# regole syslog uscente' >> "$FILE"
+  echo "iptables -I OUTPUT -p udp -d ${SERVER} --dport 514 -j ACCEPT" >> "$FILE"
+  printf "\n" >> "$FILE"
 fi
 
 # regole ssh verso server
