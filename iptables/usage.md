@@ -23,7 +23,7 @@ iptables -P FORWARD DROP
 | -x           	| --ssh        	| ssh                     	|                          	| allow ssh                              	|
 | -n           	| --snmp       	| snmp                    	|                          	| allow snmp                             	|
 | -l           	| --ldap       	| ldap                    	|                          	| allow ldap                             	|
-| -g           	| --syslog     	| syslog                  	| in \| out \| inout \| io 	| allow incoming and/or outcoming syslog 	|
+| -g           	| --syslog     	| syslog                  	| in \| out \| inout \| io 	| allow incoming and/or outgoing syslog 	|
 | -F           	| --flush-prev 	| flush                   	|                          	| flush nat and iptables as first thing  	|
 | -v           	| --vpn        	| vpn                     	|                          	| allow vpn                              	|
 | -f           	|              	|                         	| filename                 	| set output file                        	|
