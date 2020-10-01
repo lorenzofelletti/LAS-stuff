@@ -60,11 +60,12 @@ ROUTER=${rarg:="10.1.1.254"}
 SERVER=${sarg:="10.9.9.1/24"}
 
 echo '#/bin/bash' > "$FILE"
+printf "\n" >> "$FILE"
 
 if [ ! -z "$flush" ]; then
   echo '# flush' >> "$FILE"
-  echo "iptables -t nat -F" >> "$FILE"
-  echo "iptables -F" >> "$FILE"
+  echo 'iptables -t nat -F' >> "$FILE"
+  echo 'iptables -F' >> "$FILE"
   printf "\n" >> "$FILE"
 fi
 
@@ -90,7 +91,7 @@ fi
 # syslog (in)
 if [[ ! -z "$syslogin" ]]; then
   echo '# regole syslog entrante' >> "$FILE"
-  echo "iptables -I INPUT -p udp --dport 514 -s ${CLIENT} -d ${ROUTER} -i eth2 -j ACCEPT" >> "$FILE"
+  echo 'iptables -I INPUT -p udp --dport 514 -s '"${CLIENT}"' -d '"${ROUTER}"' -i eth2 -j ACCEPT' >> "$FILE"
   printf "\n" >> "$FILE"
 fi
 
