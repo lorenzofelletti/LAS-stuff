@@ -1,5 +1,5 @@
 # Iptablesmin Usage
-iptablesmin generates the minimum iptables configuration based on the input args and output it to a file - by default named output.txt.
+iptablesmin generates the minimum iptables configuration based on the input args and output it to a file - by default named output.sh.
 ## Default Parameters and Output
 By default the client, router and server are:
 - client: 10.1.1.0/24
